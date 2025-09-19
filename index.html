@@ -16,22 +16,33 @@
       text-align: center;
       padding: 20px;
     }
+
     .message {
       max-width: 600px;
     }
+
     .gotcha {
       font-size: 1.5em;
       color: #ffcc00;
       margin-bottom: 20px;
+      animation: flash 1s infinite;
     }
+
+    @keyframes flash {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
     h1 {
       font-size: 2.5em;
       margin-bottom: 20px;
       color: #ff4444;
     }
+
     p {
       font-size: 1.2em;
     }
+
     .footer {
       margin-top: 40px;
       font-size: 0.9em;
